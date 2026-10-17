@@ -60,34 +60,7 @@ nav.vis{opacity:1;transform:translateY(0);}
 .nlinks a{color:var(--muted);text-decoration:none;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;transition:color .3s;}
 .nlinks a:hover{color:var(--accent);}
 
-/* SIH DOCUMENTATION MODAL */
-.sih-modal-backdrop{position:fixed;inset:0;z-index:99999;background:rgba(1,8,18,0.88);backdrop-filter:blur(18px);display:none;align-items:center;justify-content:center;padding:24px;opacity:0;transition:opacity .3s ease;}
-.sih-modal-backdrop.open{display:flex;opacity:1;}
-.sih-modal-dialog{background:rgba(2,14,24,.97);border:1px solid rgba(0,255,200,.3);border-radius:12px;box-shadow:0 0 70px rgba(0,255,200,.16),0 20px 50px rgba(0,0,0,.9);max-width:980px;width:100%;max-height:88vh;display:flex;flex-direction:column;overflow:hidden;position:relative;}
-.sih-modal-dialog, .sih-modal-dialog *{cursor:auto!important;user-select:text!important;}
-.sih-modal-header{padding:22px 28px 16px;border-bottom:1px solid rgba(0,255,200,.15);display:flex;justify-content:space-between;align-items:flex-start;gap:16px;background:linear-gradient(180deg,rgba(0,255,200,.06),transparent);}
-.sih-modal-badge{font-size:.56rem;letter-spacing:.2em;color:var(--accent);font-weight:700;margin-bottom:6px;text-transform:uppercase;}
-.sih-modal-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1.35rem;color:#fff;line-height:1.25;}
-.sih-modal-subtitle{font-size:.68rem;color:var(--muted);margin-top:4px;}
-.sih-modal-close{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);color:#fff;font-size:1.1rem;width:34px;height:34px;border-radius:50%;cursor:pointer!important;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;}
-.sih-modal-close:hover{background:rgba(255,60,60,.25);border-color:#ff5555;color:#ff5555;transform:rotate(90deg);}
-.sih-modal-links-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 28px;background:rgba(0,255,200,.025);border-bottom:1px solid rgba(0,255,200,.08);}
-.sih-btn-live{padding:6px 14px;background:var(--accent);color:#000!important;font-family:'Syne',sans-serif;font-weight:700;font-size:.65rem;text-decoration:none;letter-spacing:.08em;border-radius:4px;transition:all .2s;}
-.sih-btn-live:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,255,200,.4);}
-.sih-btn-gh{padding:6px 14px;background:rgba(255,255,255,.08);color:#fff!important;font-family:'Syne',sans-serif;font-weight:700;font-size:.65rem;text-decoration:none;letter-spacing:.08em;border-radius:4px;border:1px solid rgba(255,255,255,.18);transition:all .2s;}
-.sih-btn-gh:hover{border-color:var(--accent2);color:var(--accent2)!important;transform:translateY(-2px);}
-.sih-metric-pill{padding:4px 10px;background:rgba(123,110,246,.12);border:1px solid rgba(123,110,246,.28);color:var(--accent2);font-size:.62rem;border-radius:20px;}
-.sih-modal-body{padding:26px 28px;overflow-y:auto;font-size:.76rem;color:#c0ded0;line-height:1.8;}
-.sih-modal-body h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;color:var(--accent);margin:24px 0 10px;padding-bottom:6px;border-bottom:1px solid rgba(0,255,200,.14);}
-.sih-modal-body h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.86rem;color:#ffffff;margin:18px 0 8px;}
-.sih-modal-body table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.68rem;}
-.sih-modal-body th,.sih-modal-body td{border:1px solid rgba(0,255,200,.14);padding:8px 10px;text-align:left;}
-.sih-modal-body th{background:rgba(0,255,200,.08);color:var(--accent);font-family:'Syne',sans-serif;font-weight:700;}
-.sih-modal-body tr:nth-child(even){background:rgba(255,255,255,.02);}
-.sih-modal-body pre{background:#010912;border:1px solid rgba(0,255,200,.16);padding:14px;overflow-x:auto;font-family:'Share Tech Mono',monospace;font-size:.66rem;color:#9ef0cf;border-radius:6px;margin:12px 0;line-height:1.6;}
-.sih-modal-body ul{margin:8px 0 14px 20px;}
-.sih-modal-body li{margin-bottom:5px;}
-.sih-callout{padding:12px 16px;border-left:3px solid var(--accent);background:rgba(0,255,200,.04);margin:14px 0;font-size:.72rem;}
+
 
 /* HERO */
 #hero{position:relative;z-index:6;min-height:100vh;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:0 80px;overflow:hidden;}
@@ -260,7 +233,7 @@ nav.vis{opacity:1;transform:translateY(0);}
 
 
 
-footer{position:relative;z-index:6;padding:26px 80px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:.61rem;color:var(--muted);}
+footer{position:relative;z-index:6;padding:26px 80px;border-top:1px solid var(--border);display:flex;justify-content:center;align-items:center;font-size:.61rem;color:var(--muted);}
 footer span{color:var(--accent);}
 @keyframes thunderReveal{0%{box-shadow:inset 0 0 0 rgba(180,150,255,0);}25%{box-shadow:inset 0 0 70px rgba(180,150,255,.7),0 0 90px rgba(180,150,255,.4);}50%{box-shadow:inset 0 0 20px rgba(180,150,255,.15);}75%{box-shadow:inset 0 0 90px rgba(0,255,200,.5),0 0 110px rgba(0,255,200,.3);}100%{box-shadow:inset 0 0 25px rgba(0,255,200,.07),0 0 40px rgba(0,255,200,.08);}}
 .gbox.broken .gcont{animation:thunderReveal 1.1s ease-out forwards;}
@@ -330,7 +303,7 @@ footer span{color:var(--accent);}
     <a href="#projects" class="btn btn-g">⚡ Explore Projects</a>
     <a href="#contact" class="btn btn-o">📄 Download Resume</a>
   </div>
-  <div class="scroll-hint" id="hi">WEAPON AUTO-SWITCHES · CLICK PANELS TO DESTROY · SPACE = AUTO-FIRE</div>
+  <div class="scroll-hint" id="hi" style="display:none;"></div>
 </section>
 
 <!-- MARQUEE -->
@@ -344,7 +317,6 @@ footer span{color:var(--accent);}
 <!-- ARENA: boxes in order — About, Education, Skills, Experience, Projects, Achievements, Certifications -->
 <section id="arena-wrap" style="position:relative;z-index:6;">
   <div id="arena">
-    <div class="ahint">⚡ WEAPON AUTO-SWITCHES — CLICK PANELS TO DESTROY</div>
     <div class="bgrid" id="bgrid">
       <div class="gbox rev" id="about" data-id="0">
         <div class="gring"></div><div class="pulse-ring"></div>
@@ -435,31 +407,24 @@ footer span{color:var(--accent);}
         <div class="target-corner tl"></div><div class="target-corner tr"></div><div class="target-corner bl"></div><div class="target-corner br"></div>
         <div class="gcov"><div class="gicon">👁️</div><div class="glabel">Project 06</div><div class="gsub">Break to Reveal</div></div>
         <div class="gcont">
-          <span class="gc-num">PROJECT — 06 · SMART INDIA HACKATHON 2026</span>
-          <h3 class="gc-title">Diabetic Retinopathy Screening (VisionX)</h3>
-          <div class="gc-meta">SIH 2026 (Problem Statement SIH26038) · PyTorch, ResNet-50, FastAPI, React 18, Grad-CAM · 2026</div>
+          <span class="gc-num">PROJECT — 06</span>
+          <h3 class="gc-title">Diabetic Retinopathy Screening</h3>
+          <div class="gc-meta">PyTorch, ResNet-50, FastAPI, React · 2026</div>
           <ul class="gc-list">
-            <li><strong>Explainable Edge-AI Clinical Decision Support System (CDSS)</strong>: Built for Smart India Hackathon 2026 to deliver automated 5-class DR severity grading. Validated on APTOS 2019 dataset achieving <strong>0.8855 Quadratic Weighted Kappa (QWK)</strong>, <strong>80.0% accuracy</strong>, and <strong>100% sensitivity on severe &amp; proliferative DR</strong> (0 out of 98 sight-threatening cases missed).</li>
-            <li><strong>5-Pillar Automated Quality Gate</strong>: Pre-inference rejection gateway evaluating Sharpness (Laplacian &ge; 2.0), Illumination (24–225 mean), Retinal Coverage (&ge; 15%), Biological Vascular Chrominance (R &gt; G &gt; B), and Resolution (&ge; 120&times;120), delivering real-time recapture guidance to rural ASHA health workers.</li>
-            <li><strong>1.2s Edge CPU Inference &amp; Decision Calibration</strong>: ResNet-50 backbone optimized for ₹15k laptops with zero GPU dependencies; calibrated with normal retina protection rules and sight-threatening retention.</li>
-            <li><strong>Lesion-Level Explainable AI (XAI)</strong>: Combines Layer-4 Grad-CAM activation with vascular segmentation and <strong>Optic Disc Isolation (15% safety boundary)</strong> to detect and annotate Microaneurysms, Hemorrhages, Hard Exudates, and Cotton Wool Spots with bounding coordinates and lesion counts.</li>
-            <li><strong>100% Offline Progressive Web App (PWA)</strong>: Quota-safe IndexedDB caching for 500+ patient records, interactive 2.0x–3.0x smooth optical magnification viewport, dual-mode bilingual diagnostic reporting, and automated PDF referral letters.</li>
+            <li>AI-powered clinical decision support system for 5-class diabetic retinopathy severity grading using ResNet-50 and Grad-CAM explainability, achieving 0.8855 QWK.</li>
+            <li>Implemented a 5-pillar pre-inference quality gate to reject ungradeable scans, deployed as an offline-first Progressive Web App (PWA).</li>
           </ul>
           <div class="gc-tags">
-            <span class="gc-tag">PyTorch 2.0+</span>
+            <span class="gc-tag">PyTorch</span>
             <span class="gc-tag">ResNet-50</span>
             <span class="gc-tag">FastAPI</span>
-            <span class="gc-tag">React 18</span>
-            <span class="gc-tag">Grad-CAM (XAI)</span>
-            <span class="gc-tag">OpenCV</span>
-            <span class="gc-tag">IndexedDB (PWA)</span>
-            <span class="gc-tag">SIH 2026 (SIH26038)</span>
-            <span class="gc-tag">QWK: 0.8855</span>
+            <span class="gc-tag">React</span>
+            <span class="gc-tag">Grad-CAM</span>
+            <span class="gc-tag">PWA</span>
           </div>
           <div class="gc-links">
-            <a href="https://dr-screen.vercel.app" target="_blank" rel="noopener" class="gc-link">🌐 Live Demo →</a>
             <a href="https://github.com/Boobathi-V/SIH_2026" target="_blank" rel="noopener" class="gc-link">⭐ GitHub →</a>
-            <a href="javascript:void(0)" onclick="openSihModal()" class="gc-link" style="color:var(--gold);border-color:rgba(255,215,0,.35);">📋 View Full SIH Documentation &amp; Specs →</a>
+            <a href="https://dr-screen.vercel.app" target="_blank" rel="noopener" class="gc-link">🌐 Live Demo →</a>
           </div>
         </div>
       </div>
@@ -505,191 +470,8 @@ footer span{color:var(--accent);}
   </div>
 </section>
 
-<!-- SIH 2026 VISIONX FULL DOCUMENTATION MODAL -->
-<div id="sih-modal" class="sih-modal-backdrop" onclick="if(event.target===this)closeSihModal()">
-  <div class="sih-modal-dialog">
-    <div class="sih-modal-header">
-      <div>
-        <div class="sih-modal-badge">Smart India Hackathon 2026 · Problem Statement SIH26038</div>
-        <h2 class="sih-modal-title">VisionX: Explainable AI Platform for Diabetic Retinopathy Screening</h2>
-        <div class="sih-modal-subtitle">Edge-AI Clinical Decision Support System (CDSS) · Team VisionX · MedTech &amp; Healthcare</div>
-      </div>
-      <button class="sih-modal-close" onclick="closeSihModal()" title="Close (Esc)">✕</button>
-    </div>
-
-    <div class="sih-modal-links-bar">
-      <a href="https://dr-screen.vercel.app" target="_blank" rel="noopener" class="sih-btn-live">🌐 Open Live Demo</a>
-      <a href="https://github.com/Boobathi-V/SIH_2026" target="_blank" rel="noopener" class="sih-btn-gh">⭐ GitHub Repository</a>
-      <span class="sih-metric-pill">QWK: 0.8855</span>
-      <span class="sih-metric-pill">Inference: 1.2s (CPU)</span>
-      <span class="sih-metric-pill">Severe DR Sensitivity: 100%</span>
-      <span class="sih-metric-pill">Accuracy: 80.0%</span>
-      <span class="sih-metric-pill">Offline PWA: 100%</span>
-    </div>
-
-    <div class="sih-modal-body">
-      <div class="sih-callout">
-        <strong>VisionX Overview:</strong> An edge-first, explainable Clinical Decision Support System (CDSS) built specifically for Smart India Hackathon 2026 (SIH26038). It couples a 5-Pillar Automated Quality Gate with a fine-tuned ResNet-50 classifier, Layer-4 Grad-CAM explainability, and multi-lesion localization (with optic disc safety isolation) running in 1.2s on standard laptop CPUs without GPU or cloud dependency.
-      </div>
-
-      <h3>1. Executive Summary &amp; Smart India Hackathon Alignment</h3>
-      <h4>The Problem</h4>
-      <p>India is the diabetes capital of the world with over <strong>77 million diagnosed diabetic citizens</strong>. Diabetic Retinopathy (DR) is the leading cause of preventable adult blindness in India, caused by chronic microvascular damage to the retina. Over <strong>90% of vision loss can be prevented</strong> if caught early. However:</p>
-      <ul>
-        <li>India has fewer than <strong>25,000 ophthalmologists</strong> (~1 specialist per 56,000 citizens in urban areas, and virtually 0 in remote rural villages).</li>
-        <li>Standard deep learning classifiers fail when deployed in rural clinics because they are <strong>opaque black boxes</strong> (doctors reject them due to lack of evidence) and <strong>blindly grade poor-quality or corrupted photos</strong> (causing dangerous false negatives).</li>
-        <li>Rural Primary Health Centers (PHCs) lack GPU infrastructure and consistent internet connectivity.</li>
-      </ul>
-
-      <h4>The VisionX Solution</h4>
-      <ul>
-        <li><strong>First-Line 5-Pillar Quality Gate:</strong> Evaluates focus, illumination, coverage, and vascular chrominance to reject corrupt or non-retinal scans before inference, delivering instant recapture instructions to ASHA/ANM health workers.</li>
-        <li><strong>ResNet-50 Core Classifier:</strong> Highly optimized 5-class severity grading running in <strong>1.2 seconds on standard CPU</strong> without cloud or GPU costs.</li>
-        <li><strong>True Lesion-Level Explainability:</strong> Combines Layer4 Grad-CAM attention with vascular segmentation and <strong>Optic Disc Isolation</strong> to localize Microaneurysms, Hemorrhages, Hard Exudates, and Cotton Wool Spots with bounding coordinates and lesion counts.</li>
-        <li><strong>Interactive 2.0x–3.0x Optical Magnification:</strong> Smooth, camera-style zoom viewport for clinical validation without distracting reticles.</li>
-        <li><strong>Dual-Mode Explanations:</strong> Bilingual plain language for rural patients + bracketed ETDRS medical terms for healthcare workers.</li>
-        <li><strong>100% Offline PWA:</strong> Browser-cached with IndexedDB quota-safe storage, enabling zero-connectivity screening in remote sub-centers.</li>
-      </ul>
-
-      <h4>SIH 2026 Presentation Alignment Matrix</h4>
-      <table>
-        <thead>
-          <tr><th>Slide</th><th>Section Title</th><th>VisionX Implementation &amp; Focus</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><strong>1</strong></td><td>Title Page</td><td>Problem Statement ID: <strong>SIH26038</strong>, Team: <strong>VisionX</strong>, Theme: MedTech / Healthcare, Category: Software.</td></tr>
-          <tr><td><strong>2</strong></td><td>Idea Title &amp; Proposed Solution</td><td>Offline CDSS; 5-Pillar Gate, ResNet-50 grading, lesion attribution, 2.0x–3.0x magnification, working prototype visual.</td></tr>
-          <tr><td><strong>3</strong></td><td>Technical Approach</td><td>Full tech stack (PyTorch, OpenCV, FastAPI, React, IndexedDB) + 16:9 System Architecture Diagram.</td></tr>
-          <tr><td><strong>4</strong></td><td>Feasibility &amp; Viability</td><td>0.886 QWK, 80.0% accuracy, 100% sensitivity on severe DR; risk-mitigation matrix and confusion matrix graphic.</td></tr>
-          <tr><td><strong>5</strong></td><td>Impact &amp; Benefits</td><td>77M+ rural diabetics, ASHA empowerment, &gt;99% cost reduction (₹1,500 → &lt;₹10), 1.2s triage, 150k+ PHC reach.</td></tr>
-          <tr><td><strong>6</strong></td><td>Research &amp; References</td><td>APTOS 2019 (Aravind Eye Hospital), He et al. ResNet, Selvaraju et al. Grad-CAM, AAO / ICO / ETDRS standards.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>2. End-to-End System Workflow (12-Stage Pipeline)</h3>
-      <pre>
-[STAGE 1: PATIENT INTAKE]           -> Operator registers Patient ID, Age, Gender, and Eye under test (OD/OS).
-[STAGE 2: FUNDUS IMAGE ACQUISITION] -> Color fundus photo acquired via handheld, slit-lamp, or smartphone adapter.
-[STAGE 3: 5-PILLAR QUALITY GATE]    -> Sharpness (>=2.0), Illumination (24-225), Coverage (>=15%), Chrominance (R>G>B).
-[STAGE 4: REJECTION TRIAGE]         -> If failed: abort inference immediately with HTTP 422 + ASHA recapture guidance.
-[STAGE 5: RETINA PREPROCESSING]     -> Center square 1:1 crop + Ben Graham contrast subtraction + CLAHE capillary boost.
-[STAGE 6: TENSOR STANDARDIZATION]   -> Interpolates to 224x224 RGB, normalizes with ImageNet mean &amp; std on CPU device.
-[STAGE 7: RESNET-50 FORWARD PASS]   -> 4 residual stages extracting multi-scale vascular &amp; pathological micro-textures.
-[STAGE 8: GAP &amp; LOGITS]             -> Global Average Pooling (2048-dim) + FC linear layer produces Softmax probabilities.
-[STAGE 9: DECISION CALIBRATION]     -> Rule 1 (Normal protection >=80%), Rule 2 (Mild correction), Rule 3 (Severe lock-in).
-[STAGE 10: EXPLAINABLE AI &amp; LESIONS]-> Layer4 Grad-CAM hooks + Optic Disc isolation (15% safety boundary) + lesion markers.
-[STAGE 11: DUAL-MODE REPORTING]     -> Patient plain-language diagnostic text + ETDRS clinical terminology in brackets.
-[STAGE 12: EDGE DELIVERY &amp; OFFLINE] -> React PWA with 2.0x-3.0x magnification viewport + IndexedDB persistence + PDF export.
-      </pre>
-
-      <h3>3. Expected Input Image Format &amp; Ingestion Standards</h3>
-      <table>
-        <thead>
-          <tr><th>Specification</th><th>Requirement / Range</th><th>Clinical Rationale</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Accepted Formats</td><td>JPEG, PNG, WEBP, BMP, TIFF</td><td>Universal compatibility across handheld and tabletop fundus cameras.</td></tr>
-          <tr><td>Color Channels</td><td>3-Channel RGB</td><td>Differential green/red channel absorption required for retinal vascular analysis.</td></tr>
-          <tr><td>Input Resolutions</td><td>120x120 px to 8000x8000 px</td><td>Dynamically standardized; &gt;=512x512 recommended for microaneurysm clarity.</td></tr>
-          <tr><td>Max File Upload</td><td>Up to 25 MB per image</td><td>Accommodates uncompressed RAW or high-resolution TIFF fundus exports.</td></tr>
-          <tr><td>API Protocol</td><td>multipart/form-data</td><td>Standard REST payload via POST /predict with form key 'file'.</td></tr>
-          <tr><td>Camera Hardware</td><td>Handheld, Tabletop, Smartphone</td><td>Tested with Remidio, Forus 3nethra, Topcon, Zeiss, and DIY smartphone adapters.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>4. The 5-Pillar Automated Quality Gate (The Rejection Gateway)</h3>
-      <p>Standard classifiers fail disastrously in real rural clinics by blindly grading blurry or non-retinal photos as "No DR", creating dangerous false negatives. VisionX implements 5 strict biological and optical checks:</p>
-      <ul>
-        <li><strong>Pillar 1: Sharpness &amp; Focus Verification (Laplacian Variance):</strong> Discrete 2D Laplacian operator response variance σ²(∇²I) &ge; 2.0. Rejects motion blur and diopter defocus.</li>
-        <li><strong>Pillar 2: Illumination &amp; Dynamic Range:</strong> Mean grayscale intensity 24.0 &le; μ &le; 225.0. Rejects underexposed/black photos and corneal specular glare washouts.</li>
-        <li><strong>Pillar 3: Retinal Disc Coverage:</strong> Active fundus area ratio &ge; 15% of frame. Rejects misplaced shots of eyelids or eyebrows.</li>
-        <li><strong>Pillar 4: Biological Vascular Chrominance:</strong> Retinal tissue spectrum verification (μ_R &gt; μ_G &gt; μ_B and μ_R / μ_B &ge; 1.1x). Rejects selfies, pets, documents, and fraudulent non-retinal images.</li>
-        <li><strong>Pillar 5: Minimum Spatial Resolution:</strong> Dimensions &ge; 120&times;120 px. Ensures adequate physical pixel density to resolve capillary microaneurysms.</li>
-      </ul>
-
-      <h3>5. Deep Model Architecture: ResNet-50 Breakdown</h3>
-      <table>
-        <thead>
-          <tr><th>Criterion</th><th>ResNet-50 (VisionX Choice)</th><th>EfficientNet-B7</th><th>Vision Transformer (ViT-L/16)</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Parameters</td><td>~25.5 Million</td><td>~66 Million</td><td>~304 Million</td></tr>
-          <tr><td>Model Disk Size</td><td>~100 MB</td><td>~256 MB</td><td>~1.2 GB</td></tr>
-          <tr><td>CPU Inference Latency</td><td>1.2 – 2.5 seconds</td><td>10 – 16 seconds</td><td>25 – 45 seconds</td></tr>
-          <tr><td>RAM Requirement</td><td>&lt; 1.5 GB</td><td>&gt; 4 GB</td><td>&gt; 8 GB</td></tr>
-          <tr><td>Grad-CAM Interpretability</td><td>Native &amp; High-Resolution</td><td>Partial / Complex</td><td>Requires Attention Rollout</td></tr>
-          <tr><td>Rural Offline Feasibility</td><td>100% on ₹15k PHC Laptop</td><td>Sluggish</td><td>Impractical without GPU</td></tr>
-        </tbody>
-      </table>
-
-      <h3>6. Explainable AI Engine: Grad-CAM Formulation</h3>
-      <p>VisionX hooks into <code>model.layer4[-1]</code> (the 2048-channel 7&times;7 final residual bottleneck) to compute gradient-weighted class activation maps:</p>
-      <pre>
-1. Neuron Importance Weights:   α_k^c = (1 / Z) * Σ_i Σ_j (∂y^c / ∂A_{i,j}^k)
-2. Weighted Linear Combination: L_{Grad-CAM}^c = ReLU( Σ_k α_k^c * A^k )
-3. Blended Heatmap Overlay:     I_{overlay} = 0.6 * I_{fundus} + 0.4 * I_{heatmap}
-      </pre>
-
-      <h3>7. Retinal Lesion Detection &amp; Optic Disc Isolation</h3>
-      <ul>
-        <li><strong>Optic Disc Isolation:</strong> Red-channel closing isolates the bright circular nerve head and applies a <strong>15% safety exclusion mask</strong> to prevent false-positive hard exudate detections.</li>
-        <li><strong>Microaneurysms (MAs):</strong> Earliest sign of DR; detected via Green-channel Black-Hat transform and circularity filter (&ge; 0.55).</li>
-        <li><strong>Intraretinal Hemorrhages (HMs):</strong> Dot/blot and flame hemorrhages segmented via Bottom-Hat morphology with vessel tree intersection subtraction.</li>
-        <li><strong>Hard Exudates (HEs):</strong> Lipid leakages segmented in CIELAB/HSV color spaces (L* &ge; 140, b* &ge; 135) with Sobel edge verification.</li>
-        <li><strong>Cotton Wool Spots (CWS):</strong> Nerve fiber infarctions isolated through high luminance (L* &ge; 155) and low boundary gradient checks.</li>
-      </ul>
-
-      <h3>8. Clinical Decision Calibration Layer</h3>
-      <ul>
-        <li><strong>Rule 1 (Healthy Fundus Protection):</strong> If Class 0 softmax confidence &ge; 80%, locks in "No DR" to prevent clinic overcrowding and rural panic.</li>
-        <li><strong>Rule 2 (Mild DR Correction):</strong> Reclassifies borderline Moderate NPDR to Mild NPDR if exudate density &lt; 20/1000px and microaneurysm density &lt; 15/1000px.</li>
-        <li><strong>Rule 3 (Severe DR Lock-In):</strong> Locks in Class 3 and Class 4 predictions directly to preserve <strong>100% sensitivity</strong> on sight-threatening cases.</li>
-      </ul>
-
-      <h3>9. Quantitative Validation Benchmarks &amp; Clinical Evaluation</h3>
-      <table>
-        <thead>
-          <tr><th>Metric</th><th>Measured Value</th><th>Clinical Meaning</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Quadratic Weighted Kappa (QWK)</td><td><strong>0.8855</strong></td><td>Clinical agreement score (AAO standard: &gt;0.85 = Excellent).</td></tr>
-          <tr><td>Exact 5-Class Accuracy</td><td><strong>79.95%</strong> (~80.0%)</td><td>Exact match across all 5 ordinal disease stages.</td></tr>
-          <tr><td>Weighted F1-Score</td><td><strong>0.8080</strong></td><td>Class-prevalence weighted harmonic mean of precision and recall.</td></tr>
-          <tr><td>Severe &amp; Proliferative DR Sensitivity</td><td><strong>100.0%</strong></td><td>0 out of 98 sight-threatening cases missed.</td></tr>
-          <tr><td>Healthy Retina Precision</td><td><strong>98.0%</strong></td><td>Only 15 out of 361 healthy eyes flagged, preventing clinic overcrowding.</td></tr>
-          <tr><td>Edge CPU Latency</td><td><strong>1.2 seconds</strong></td><td>Real-time screening on low-spec hardware without GPU.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>10. Full REST API Documentation</h3>
-      <pre>
-POST /predict             -> Ingests fundus image; returns DR grade, confidence, lesion counts, &amp; URLs.
-GET  /heatmap/{filename}  -> Streams generated Grad-CAM attention heatmap overlay image.
-GET  /annotated/{filename}-> Streams annotated fundus image with lesion callout markers.
-GET  /health              -> Returns model status, device (CPU), and server uptime.
-GET  /docs                -> Interactive Swagger UI API documentation and testing playground.
-      </pre>
-
-      <h3>11. Edge Deployment &amp; 100% Offline Progressive Web App (PWA)</h3>
-      <p>VisionX requires <strong>zero cloud servers</strong> to screen patients:</p>
-      <ul>
-        <li><strong>FastAPI Core:</strong> Runs locally on any standard laptop CPU (&lt;1.2s latency).</li>
-        <li><strong>Frontend PWA:</strong> React 18 + Vite with Service Workers caches the complete screening suite.</li>
-        <li><strong>IndexedDB Storage:</strong> Persists up to 500 patient records, demographic data, and annotated images locally on disk with automatic background syncing when internet is restored.</li>
-      </ul>
-
-      <div class="sih-callout" style="border-left-color:var(--accent2);margin-top:20px;">
-        <strong>Quick Links:</strong><br>
-        • Live Demo: <a href="https://dr-screen.vercel.app" target="_blank" rel="noopener" style="color:var(--accent);">https://dr-screen.vercel.app</a><br>
-        • GitHub Repository: <a href="https://github.com/Boobathi-V/SIH_2026" target="_blank" rel="noopener" style="color:var(--accent);">https://github.com/Boobathi-V/SIH_2026</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <footer>
   <div>© 2026 <span>Boobathi V</span>. All rights reserved.</div>
-  <div>Built with <span>⚡</span> · HTML · CSS · Web Audio API</div>
 </footer>
 
 <script>
@@ -1142,7 +924,7 @@ document.addEventListener('keydown',e=>{
 
 /* global click sparks */
 document.addEventListener('click',e=>{
-  if(e.target.closest('.gbox')||e.target.closest('.explode-link')||e.target.closest('.btn')||e.target.closest('.dlbtn')||e.target.closest('#sih-modal'))return;
+  if(e.target.closest('.gbox')||e.target.closest('.explode-link')||e.target.closest('.btn')||e.target.closest('.dlbtn'))return;
   sparks(e.clientX,e.clientY,'rgba(0,255,200,.7)',10,3);energyRing(e.clientX,e.clientY);
 });
 
@@ -1150,25 +932,6 @@ document.addEventListener('click',e=>{
 document.querySelectorAll('.btn,.dlbtn').forEach(btn=>{
   btn.addEventListener('mousemove',function(e){const r=this.getBoundingClientRect();this.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.13}px,${(e.clientY-r.top-r.height/2)*.13}px) translateY(-3px)`;});
   btn.addEventListener('mouseleave',function(){this.style.transform='';});
-});
-
-/* ══ SIH MODAL CONTROLLER ══ */
-function openSihModal(){
-  const m=document.getElementById('sih-modal');
-  if(m){
-    m.classList.add('open');
-    document.body.style.overflow='hidden';
-  }
-}
-function closeSihModal(){
-  const m=document.getElementById('sih-modal');
-  if(m){
-    m.classList.remove('open');
-    document.body.style.overflow='';
-  }
-}
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeSihModal();
 });
 </script>
 </body>
